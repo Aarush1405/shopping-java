@@ -1,0 +1,156 @@
+<jsp:useBean id="mybe" class="shopping.Order" />
+<jsp:setProperty name="mybe" property="*" />
+    <%@ page import="java.sql.*" %>
+	<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+	<html>
+		<body>
+			<%
+				int result=mybe.updateStatus();
+
+				if(result==1){
+				
+				
+			%>
+			 <script src=" https://kit.fontawesome.com/71a06f9aff.js" crossorigin="anonymous">
+            </script>
+
+                <style>
+                    .container {
+                        height: auto;
+                        width: 35%;
+                        margin: auto;
+                        padding: 20px;
+                        /* background-color: antiquewhite; */
+                        border-radius: 10px;
+                        overflow: hidden;
+                        /* position: absolute;
+            			top: 20px; */
+                        box-shadow: 0px 0px 20px #333;
+                        margin-top: 2%;
+                    }
+
+                    .i {
+                        height: auto;
+                        width: 100%;
+                        /* background-color: aqua; */
+                        font-size: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .container .i i {
+                        font-size: 80px;
+                        color: green;
+                    }
+
+                    .p {
+                        height: auto;
+                        width: 100%;
+                        text-align: center;
+                    }
+
+                    button {
+                        height: 35px;
+                        width: 70%;
+                        background-color: #075ed0;
+                        color: white;
+                        font-size: 17px;
+                        border: none;
+                        border-radius: 5px;
+                    }
+
+                    button:hover {
+                        cursor: pointer;
+                        background-color: #1379ff;
+                    }
+                </style>
+
+
+                <div class="container">
+                    <div class="i">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="p">
+                        <!-- <jsp:include page="addProduct.jsp" /> -->
+                        <h3>
+                            Successfully.....Status Updated !
+                        </h3>
+                        <a href="customerOrder.jsp"><button type="submit">Okay</button></a>
+                    </div>
+                </div>
+
+                <% } else{ %>
+
+
+                    <script src="https://kit.fontawesome.com/71a06f9aff.js" crossorigin="anonymous"></script>
+
+                    <style>
+                        .container {
+                            height: auto;
+                            width: 35%;
+                            margin: auto;
+                            padding: 20px;
+                            /* background-color: antiquewhite; */
+                            border-radius: 10px;
+                            overflow: hidden;
+                            /* position: absolute;
+                			top: 20px; */
+                            box-shadow: 0px 0px 20px #333;
+                            margin-top: 2%;
+                        }
+
+                        .i {
+                            height: auto;
+                            width: 100%;
+                            /* background-color: aqua; */
+                            font-size: 30px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        .container .i i {
+                            font-size: 80px;
+                            color: red;
+                        }
+
+                        .p {
+                            height: auto;
+                            width: 100%;
+                            text-align: center;
+                        }
+
+                        button {
+                            height: 35px;
+                            width: 70%;
+                            background-color: #075ed0;
+                            color: white;
+                            font-size: 17px;
+                            border: none;
+                            border-radius: 5px;
+                        }
+
+                        button:hover {
+                            cursor: pointer;
+                            background-color: #1379ff;
+                        }
+                    </style>
+
+
+                    <div class="container">
+                        <div class="i">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </div>
+                        <div class="p">
+                            <!-- <jsp:include page="addProduct.jsp" /> -->
+                            <h3>
+                                Status Not Updated..<br>
+                            </h3>
+                            
+                            <a href="customerOrder.jsp"><button type="submit">Okay</button></a>
+                        </div>
+                    </div>
+                    <% } %>
+		</body>
+	</html>

@@ -1,0 +1,295 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    color: rgb(72, 72, 72);
+    box-sizing: border-box;
+}
+
+header nav {
+    height: 60px;
+    width: 100%;
+    background-color: #007bff;
+}
+
+header nav .left {
+    height: 60px;
+    width: 40%;
+    float: left;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+
+
+header nav .right {
+    height: 60px;
+    width: 25%;
+    float: right;
+    /* background-color: aqua; */
+    display: flex;
+    text-transform: uppercase;
+    justify-content: right;
+    align-items: center;
+}
+
+header nav ul li {
+    list-style: none;
+    display: inline;
+    margin: 10px;
+    color: white;
+}
+
+header nav .center ul li {
+    margin: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav i {
+    color: white;
+    padding-right: 8px;
+}
+
+header nav .center select {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+ul li a button {
+    background-color: red;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+header nav .right ul li a button:hover {
+    background-color: rgb(219, 0, 0);
+    cursor: pointer;
+
+}
+
+.container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.view-container {
+    height: auto;
+    width: 50%;
+    padding: 10px;
+    float: left;
+    margin-left: 4%;
+    /* background-color: #007bff; */
+}
+
+.view-container h1 {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.table-container {
+    overflow-x: scroll;
+}
+
+.table-container table {
+    height: auto;
+    width: 100%;
+    /* background-color: aliceblue; */
+    border-collapse: collapse;
+}
+
+.table-container table thead th {
+    height: 30px;
+    width: 10%;
+    padding: 20px;
+    border-bottom: 2px solid grey;
+}
+
+.table-container table tbody tr td {
+
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    color: white;
+    border: none;
+}
+
+#blueBtn {
+    padding: 8px;
+    background-color: #007bff;
+    margin: 10px;
+    border-radius: 5px;
+
+
+}
+
+#blueBtn:hover {
+    background-color: #0273eb;
+}
+
+#redBtn:hover {
+    background-color: rgb(226, 0, 0);
+}
+
+#redBtn {
+    padding: 8px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+tr #action {
+    /* height: 200px; */
+    width: 100%;
+    /* background-color: #333; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+
+}
+
+/*quick-links*/
+.quick-links {
+    height: auto;
+    width: 100%;
+    background-color: rgb(239, 239, 239);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 2%;
+    padding: 15px;
+}
+
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    column-gap: 40px;
+    display: inline;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: all 0.1s linear;
+}
+
+.card a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 2%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-media img {
+    width: 24px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+footer p {
+    color: white;
+}
+
+/*form*/
+.form-container {
+    height: auto;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: transparent;
+
+}
+
+.form-container form {
+    height: 55vh;
+    width: 90%;
+    background-color: rgb(249, 249, 249);
+    padding: 2%;
+    margin-top: 2%;
+    filter: drop-shadow(10px 10px 20px grey);
+    border-radius: 10px;
+
+}
+
+.form-container form label {
+    height: 30px;
+    width: 100%;
+
+
+}
+
+.form-container form input,
+textarea {
+    min-height: 35px;
+    width: 100%;
+    margin-bottom: 4%;
+    border-radius: 5px;
+    border: 0.5px solid rgb(174, 174, 174);
+}
+
+.form-container form h1 {
+    text-align: center;
+    padding: 2%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+
+.form-container form button {
+    height: 40px;
+    width: 100%;
+    background-color: rgb(39, 39, 255);
+    color: white;
+    margin-top: 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-container form button:hover {
+    background-color: royalblue;
+}
+
+@media (max-width:730px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .view-container {
+        width: 95%;
+    }
+
+    .form-container {
+        width: 95%;
+    }
+}

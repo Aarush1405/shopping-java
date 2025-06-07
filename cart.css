@@ -1,0 +1,208 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    color: rgb(72, 72, 72);
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+ul li button {
+    background-color: red;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+header nav .right ul li a button:hover {
+    background-color: rgb(219, 0, 0);
+    cursor: pointer;
+
+}
+
+i {
+    color: white;
+}
+
+
+
+.container {
+    height: auto;
+    width: 100%;
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.container h2 {
+    padding: 20px;
+    width: 100%;
+    /* background-color: #99caff; */
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.container .detail-container {
+    height: auto;
+    width: 70%;
+    padding: 40px;
+    padding-top: 0%;
+    /* box-shadow: 0px 0px 20px #333; */
+    /* background-color: #fff2f2; */
+}
+
+.table-container {
+    overflow-x: scroll;
+}
+
+.container .detail-container .table-container table {
+    height: auto;
+    width: 100%;
+    padding: 30px;
+    /* background-color: aliceblue; */
+    border-collapse: collapse;
+}
+
+.container .detail-container .table-container table thead th {
+    height: 40px;
+    width: 10%;
+    padding: 20px;
+    background-color: #d0d0d0;
+    border-bottom: 2px solid grey;
+}
+
+.container .detail-container .table-container table tbody tr td {
+    height: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.payment-container {
+    height: auto;
+    width: 30%;
+    /* background-color: #99caff; */
+    box-sizing: border-box;
+}
+
+.div-card {
+    height: auto;
+    width: 95%;
+    margin-top: 0;
+    margin: 10px;
+    /* background-color: #ff0c0c;*/
+    border: 0.2px solid rgb(220, 220, 220);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px#b6b6b6;
+}
+
+.payment-container .h3 {
+    padding: 6px;
+    text-align: center;
+}
+
+.payment-container .content-div {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    text-transform: capitalize;
+    /* background-color: #99caff; */
+}
+
+.payment-container .content-div table {
+    width: 100%;
+}
+
+.payment-container .content-div table tr th {
+    width: 50%;
+    padding: 5px;
+    /* background-color: #d0d0d0; */
+    text-align: left;
+    font-weight: 600;
+}
+
+.payment-container .content-div table tr td {
+    font-weight: 400;
+}
+
+.payment-container .content-div table tr .rth {
+    text-align: right;
+}
+
+tr th select {
+    width: 100%;
+    height: 30px;
+    border: 0.2px solid rgb(220, 220, 220);
+}
+
+#orderBtn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 2%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-media img {
+    width: 24px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+footer p {
+    color: white;
+}
+
+tr td {
+    display: inline;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+@media (max-width:849px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .payment-container {
+        width: 100%;
+    }
+
+    .container .detail-container {
+        width: 100%;
+    }
+
+    .table-container {
+        width: 100%;
+    }
+}
+
+.noFound {
+	height:75vh;
+	width:100%;
+	
+    background-image: url(./img/empty-cart.jpg);
+    background-repeat: no-repeat;
+	background-size:contain;
+	background-position:center;
+}
